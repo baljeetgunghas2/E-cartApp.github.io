@@ -1,0 +1,158 @@
+.cardListSen{
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.product-card{
+    text-decoration: none;
+    color: unset;
+}
+
+.cardSection{
+    background: rgb(255 255 255);
+    border-radius: 10px;
+}
+.cardImgSec{
+    position: relative;
+    padding: 10px;
+}
+.product-thumb{
+        width: 100%;
+        height: 230px;
+}
+
+.cardD{
+    border-top: 1px solid gainsboro;
+    padding: 20px;
+}
+.cardSection .cardHeading{
+    font-size: 22px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.cardSection .cardDiscription{
+    font-size: 14px;
+    color: #221010c2;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 18px;
+}
+.ratingection{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 5px;
+}
+
+.staricon{
+width: 20px;
+height: 20px;
+}
+.ratingnumber{
+    font-size: 12px;
+    color: grey;
+    margin-left: 5px;
+}
+.priceSection{
+    justify-content: center;
+    padding: 5px;
+}
+.afterDiscount{
+    align-items: flex-start;
+    display: flex;
+    margin-right: 10px;
+
+}
+.beforeDiscount{
+    align-items: flex-end;
+}
+.rsiconAfterdiscount{
+    font-size: 12px;
+    color: lightslategrey;
+    margin-right: 2px;
+}
+.priceAfterdiscount{
+    font-size: 23px;
+    
+}
+.rsiconBeforediscount{
+    font-size: 12px;
+    color: lightslategrey;
+    margin-right: 2px;
+}
+.priceBeforediscount{
+    font-size: 13px;
+    color: gray;
+    text-decoration: line-through;
+}
+.discountPer{    
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: 400;
+
+}
+.primeDeal{
+    justify-content: center;
+    padding:5px;
+    font-size: 14px;
+    align-items: center;
+    color: dodgerblue;
+}
+.primeimgIcon{
+    width: 15px;
+    height: 15px;
+}
+.delivery{
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: slategray;
+    gap: 4px;
+}
+
+.loadMoreButtonSec{
+    text-align: center;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.loadMoreButton{
+    text-transform: capitalize;
+    background-color: darkorange;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 103px;
+    font-size: 14px;
+    background: -webkit-linear-gradient(#de3131, #3573bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+@media (max-width: 280px)  {
+    .cardListSen{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    
+    .cardListSen{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ratingection {
+        justify-content: center !important;
+    }
+}

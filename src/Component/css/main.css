@@ -1,0 +1,49 @@
+@import './Header.css';
+@import './left-panel.css';
+@import './mainbody.css';
+@import './right-panel.css';
+@import './card.css';
+
+*{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+}
+.d-flex{
+    display: flex;
+}
+.justify-SpaceBw{
+    justify-content: space-between;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.pd30{
+    padding: 30px;
+}
+
+
+.overlay{
+    background: rgb(0 0 0 / 75%);
+    width: 100VW;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.loader{
+    position: fixed;
+    z-index: 34;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+
+
+
+
+

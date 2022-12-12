@@ -1,0 +1,188 @@
+.navMain{
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    z-index: 2;
+}
+.logoimg{
+    width: 40px;
+    height: 40px;
+}
+.logoHeading{
+    transition: all 1s ease-in-out;
+}
+.searchInputSec{
+    overflow: hidden;
+}
+
+.form-control{
+    color: #333;
+    background: #ecf0f3;
+    font-size: 12px;
+    height: 11px;
+    padding: 16px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 2px 3px #cbced1, inset 0px 2px 6px #fff;
+    animation-name: searchInput ;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    top: -3px;
+}
+
+
+@keyframes searchInput {
+    0%{right: -254px;}
+    100%{right: 0px;}
+  }
+
+.dropdownList{
+    border-radius: 0 0 20px 20px;
+    /* gap: 10px; */
+    position: absolute;
+    top: 46px;
+    width: 200px;
+    background: ghostwhite;
+    max-height: 190px;
+    right: 64px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.dropdownList::-webkit-scrollbar {
+    display: none;
+  }
+
+.dropdownList li{
+    list-style: none;
+    border-bottom: 1px solid lightgray;
+    font-size: 12px;
+    font-weight: 400;
+    color: hwb(0deg 40% 60%);
+    text-transform: capitalize;
+    padding: 5px 20px;
+}
+.dropdownList li:last-child{
+    border-bottom: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.dropdownList li:hover{
+   background-color: #cbced1;
+   cursor: pointer;
+}
+
+
+
+.profileSection{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    position: absolute;
+    right: 35px;
+    top: 60px;
+    border-radius: 8px;
+    gap: 5px;
+}
+.profileSection::before {
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: rgb(199, 199, 199);
+    z-index: -11;
+    top: -7px;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.profile-dropdown-list{
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid darkgray;
+    padding: 1px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.profile-dropdown-list:hover{
+    background-color: #e6e7e9be;
+}
+.profiledropdownIcon{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* details header css */
+
+.DetailsHeaderCenter{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: unset;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .navMain{
+        padding: 5px 3%;
+    }
+    @keyframes searchInput {
+        0%{right: -254px;}
+        100%{right: 0px;}
+      }
+      .dropdownList{
+        right: 50px;
+      }
+
+      .profileSection{
+        right: 20px;
+        top: 60px;
+        border-radius: 8px;
+        gap: 5px;
+    }
+    .profileSection::before {
+        height: 15px;
+        width: 15px;
+        background-color: rgb(146, 140, 140);
+        top: -7px;
+        right: 8px;
+    }
+
+}
+
+

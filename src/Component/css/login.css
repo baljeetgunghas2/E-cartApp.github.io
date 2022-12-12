@@ -1,0 +1,248 @@
+.Login-main{
+    /* margin-top: 60px; */
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.form-Section{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    width: 90%;
+}
+.form{
+    background-color: #fff;
+    height: 100%;
+    width: 30%;
+    border-radius: 20px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.usericonLogin{
+    background: #adcafd;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    border-bottom: 4px solid;
+    border-radius: 50%;
+    padding: 3px;
+}
+.form-heading{
+    font-size: 22px;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 10px;
+    display: block;
+    /* background-color: chartreuse; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.formInput{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.input-Div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputLable{
+    position: absolute;
+    left: 40px;
+    color: gray;
+}
+
+.inputLable::before{
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: darkgray;
+    position: absolute;
+    left: 20px;
+}
+
+
+.formInput input{
+    width: 80%;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    background: #ececec;
+    padding: 4px 9px;
+    padding-left: 35px;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+    font-weight: 500;
+    outline: none;
+}
+
+
+
+
+.form-terms{
+    color: #909090;
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+ .form-terms input[type="checkbox"]{
+    margin: 0px 5px 0 0;
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+    box-shadow: none;
+}
+.form-terms span{
+    font-size: 13px;
+    padding: 0;
+    line-height: 16px;
+}
+ .form-terms a{    
+    color: #3FA9F2;
+    font-size: 13px;
+    text-decoration: none;
+}
+ .form-terms a:hover{
+     text-decoration: underline; 
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .btn{
+    color: #fff;
+    background-color: #3FA9F2;
+    font-size: 14px;
+    padding: 7px 30px;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    display: inline-block;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.loginCss{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+ .btn:hover .loginCss{
+    color: #3FA9F2;   
+}
+
+ .btn:focus,
+ .btn:hover{
+    color: #3FA9F2;
+    background-color: #fff;
+    border: 2px solid #3FA9F2;
+}
+ .form-login{
+    color: #909090;
+    font-size: 14px;
+    margin: 10px 0;
+    display: inline-block;
+}
+ .form-login a{
+    color: #3FA9F2;
+    font-size: large;
+    text-decoration: none; 
+    text-transform: lowercase;
+}
+.form-login a:hover{
+    text-decoration: underline; 
+}
+
+.form-footer{
+    background-color: #3FA9F2;
+    text-align: center;
+    padding: 20px 25px 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 350px)  {
+    .form {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .form{
+        width: 90%;
+    }
+    .form-heading {
+        padding: 40px;
+        padding-bottom: 10px;
+    }
+    .inputLable {
+        left: 35px;
+    }
+    .form-terms span {
+        text-align: justify;
+        line-height: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .form-Section {
+        width: 100%;
+    }
+    .form {
+        width: 60%;
+        padding-bottom: 30px;
+    }
+    .inputLable {
+        left: 53px;
+    }
+    .usericonLogin {
+        width: 75px;
+    }
+    .form-heading {
+        padding: 50px;
+        padding-bottom: 15px;
+    }
+    .formInput {
+        margin-top: 30px;
+        gap: 22px;
+    }
+    .formInput input {
+        padding: 8px 10px;
+        padding-left: 40px;
+    }
+    .inputLable::before {
+        left: 24px;
+    }
+    .inputLable::before {
+        width: 2px;
+        background-color: #a9a9a9a3;
+        left: 23px;
+    }
+}

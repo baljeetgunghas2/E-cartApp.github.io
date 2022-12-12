@@ -1,0 +1,138 @@
+
+.formSinup {
+    width: 36%;
+}
+
+.loginsvg{
+    width: 70px;
+}
+.SignUPform-Section{
+    width: 100%;
+    margin-top: 70px;
+}
+
+.sign-up-input-Div{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 20px;
+}
+.inputDivSec{
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+}
+
+
+.signup-inputLable{
+    font-size: 13px;
+    color: gray;
+    font-weight: 600;
+    padding: 0 10px;
+}
+.signup-inputLable{
+    left: 0;
+}
+
+.sign-up-input-Div input{
+    width: 66%;
+    padding: 4px 9px;
+   
+}
+.inputDivSec input{
+    width: 100%;
+}
+
+
+.match{
+    color:  #4BB543 !important;
+}
+
+
+.not-match{
+    color:  #B00020 !important;
+}
+
+.errormsg{
+    font-weight: 500;
+    font-size: 9px;
+    text-transform: capitalize;
+    line-height: 12px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 350px)  {
+    .form {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .formSinup {
+        width: 90%;
+    }
+
+    .form-terms span {
+        text-align: justify;
+        line-height: 10px;
+    }
+    .signup-inputLable{
+        font-size: 10px;
+    }
+    .sign-up-input-Div{
+        gap: 0px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .form-Section {
+        width: 100%;
+    }
+    .form {
+        width: 60%;
+        padding-bottom: 30px;
+    }
+    .inputLable {
+        left: 53px;
+    }
+    .usericonLogin {
+        width: 75px;
+    }
+    .form-heading {
+        padding: 50px;
+        padding-bottom: 15px;
+    }
+    .formInput {
+        margin-top: 30px;
+        gap: 22px;
+    }
+    .formInput input {
+        padding: 8px 10px;
+        padding-left: 40px;
+    }
+    .inputLable::before {
+        left: 24px;
+    }
+    .inputLable::before {
+        width: 2px;
+        background-color: #a9a9a9a3;
+        left: 23px;
+    }
+}

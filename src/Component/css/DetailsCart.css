@@ -1,0 +1,145 @@
+body{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.cartMain-Sec{
+    height: auto;
+    width: 100%;
+    /* background-color: blueviolet; */
+    border-radius: 8px;
+    position: relative;
+    padding: 14px 18px;
+    border: 1px #D5D9D9 solid;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.deliveryTime .freeDeliver{
+    text-decoration: none;
+    color: #007185;
+}
+
+.deliveryDate{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 29px;
+}
+
+.deliveryLocation{
+    font-size: 12px;
+    color: #007185;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.deliveryLocation .locatonIcon{
+    width: 20px;
+}
+
+.dispachDetails{
+    color: #c45500;
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    line-height: 24px;
+}
+.qualitySec{
+    font-size: 16px;
+    line-height: 19px;
+    color: #0F1111;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.QualityList{
+    height: 27px;
+    width: 40px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0F1111;
+    border: 1px #ddd solid;
+}
+.addToCartBtn{
+    height: 35px;
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    background: #FFD814;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 29px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+}
+.addToCartBtn:hover{
+    background: #dfbe17;
+}
+.buyNow{
+    background: #FFA41C;
+}
+.buyNow:hover{
+    background: #f09814;
+}
+
+
+.Secure-Sec{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.Secure-Sec .Secureimg{
+    width: 18px;
+    height: 18px;
+    color: gray;
+}
+
+.secureText{
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #007185;
+}
+
+.addToWishList{
+    width: 100%;
+    color: #0F1111;
+    padding: 2px 10px;
+    font-size: 13px;
+    line-height: 29px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+    background: #e7e9ec;
+    border: 1px solid;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+}
+
+
+
+
+.sellSec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sellOption{
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);   
+    border-color: #D5D9D9;
+    border-style: solid;
+    border-width: 1px;
+    color: #0F1111;
+    font-size: 14px;
+    padding: 0px 15px;
+    cursor: pointer;
+}

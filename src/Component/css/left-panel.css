@@ -1,0 +1,127 @@
+/* .#f8f8fa00 */
+.left-panel{
+    flex-direction: column;
+    background-color: #f6f8fc;
+    height: 100%;
+    gap: 30px;
+    display: flex;
+    animation-name: leftpanalAnima ;
+    animation-duration: .5s;
+    animation-delay: 1s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+}
+.filter-Heading{
+    font-weight: 700;
+    text-shadow: rgb(0 0 0 / 0%) 0px 54px 55px, rgb(0 0 0 / 1%) 0px -13px 30px, rgb(0 0 0 / 1%) 0px 4px 6px, rgb(0 0 0 / 16%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+}
+.popular-filter {
+    color: #6495ED;
+    border-bottom: 2px solid #6495ED;
+    font-weight: 500;
+}
+.filter-right{
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.filterArrowForward{
+    color: #6495ED;
+    transition: 1s ease-in-out;
+}
+.filterArrowForwardrotate{
+    color: #6495ED;
+    transform: rotate(90deg);
+    transition: 1s ease-in-out;
+}
+.filter-listSection{
+   flex-wrap: wrap;
+   gap: 20px;
+   /* transition: ease-in-out 0.7s; */
+   animation-name: filterlistAnim ;
+   animation-duration: .5s;
+   animation-delay: 0;
+   position: relative;
+   animation-timing-function: ease-in-out;
+}
+@keyframes filterlistAnim {
+    0%   { top:-100px;z-index: -1;}
+    100% { top:0px; z-index: 0;}
+  }
+
+
+.filter-list{
+    padding: 5px 20px;
+    border: double 1px transparent;
+    border-radius: 18px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.Acctivefilter-list{
+  background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: white;
+}
+
+.uparrowtop{
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 60px;
+  right: 15px;
+  z-index: 1;
+  animation-name: toparrow ;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes toparrow {
+  0%{bottom: -60px;}
+  100%{bottom: 60px;}
+}
+
+@media (max-width: 280px)  {
+  .left-panel{
+      padding: 15px !important;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .left-panel{
+        border-radius: 0 0 10px 10px;
+        height: min-content;
+        display: inherit;
+        overflow: hidden;
+    }
+    @keyframes leftpanalAnima {
+        0%   { height: min-content}
+        100% { height: min-content !important; }
+      }
+
+      .filter-listSection{
+        overflow: scroll;
+        flex-wrap: nowrap;
+      }
+      .filter-list{
+        flex: none;
+      }
+      .filter-listSection{
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in;
+     }
+      @keyframes filterlistAnim {
+        0%   { right:-200px;z-index: -1;}
+        100% { right:0px; z-index: 0;}
+      }
+  }
+
+

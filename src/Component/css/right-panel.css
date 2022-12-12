@@ -1,0 +1,44 @@
+.right-panel{
+    background-color: #FCF6F5FF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.topSecR{
+    justify-content: space-between;
+}
+.topSecR .resultHeading{
+    font-size: 18px;
+    line-height: 25px;
+    color: #727293;
+}
+.topSecR .subheading{
+    font-size: 14px;
+    color: grey;
+}
+.resultFilter{
+    gap: 10px;
+    align-items: baseline;
+}
+
+.filterIconBtn{
+    width: 30px;
+    height: 30px;
+}
+
+.searchresult{
+    font-size: 13px;
+    color: midnightblue;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .right-panel{
+        border-radius: 10px;
+        background-color: transparent;
+        padding: 5% !important;
+    }
+}
